@@ -63,7 +63,7 @@
             }
             let xhr = new XMLHttpRequest();
             xhr.open("POST", "https://discord.com/api/v9/oauth2/token", true);
-            xhr.setRequestHeader("Content-Type", "Application/Json");
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.responseType = "json";
             xhr.send(EncodeHTMLForm(data));
             xhr.onload = function() {
